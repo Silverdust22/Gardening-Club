@@ -1,0 +1,194 @@
+html{
+    font-size:18px;
+    
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+}
+
+body {
+     line-height: 1.5;
+}
+
+.logo {
+    font-family: "dancing script" "courier" "Serif";
+    font-size: 1.65rem;
+    font-style: italic;
+    font-weight: Bolder;
+    color:yellow;
+    margin: .5rem
+}
+
+.logo:after {
+    content: '\2740';
+}
+
+.container1 {
+    height: 6rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+li {
+    list-style-type: none;
+}
+.nav li a {
+    padding: .1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:yellow;
+    margin: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    width:100%;
+    background-color:olivedrab;
+    height: auto;
+}
+
+.main {
+    width:100%;
+    font-family: "merriweather", "serif";
+    font-size: 1.5rem;
+    background-color:green;
+    color:beige;
+    padding-top:10rem;
+  }
+
+.container2 {
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.banner { 
+    width: 85%;
+    margin-left:5rem;
+    align-self: center;
+}
+
+.images1 img {
+    max-width: 22%;
+    height: auto;
+}
+
+.images1{
+    width:100%;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caption{
+    margin:2rem;
+}
+
+.images2 {
+    margin-left:1.5rem;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box img{
+    max-width: 75%; 
+    height: auto; 
+}
+
+.box .title{
+    position:relative;
+    bottom:2rem;
+    text-align:justify;
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+    color:snow;
+}
+     
+.box img:hover{
+    cursor: pointer;
+}
+
+.footer {
+    border-top: .5rem solid beige;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    font-size: 1rem;
+    color:beige;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header {
+        height: 3rem;
+}
+   .nav {   
+    margin-top: 4rem;
+    margin-left: -2rem;
+   
+}
+    .images1 {
+    flex-direction: column;
+} 
+
+   .images1 img {
+    max-width: 85%;
+    height: auto;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+    .banner {
+       width: 70%;
+       margin-left:4rem;
+       font-size: 1rem;
+}
+
+  .images2 {
+    flex-direction: column;
+}
+
+  .images2 img {
+    max-width: 70%;
+    height: auto;
+}
+
+.footer {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 1em;
+ }
+}
+
+@media only screen and (min-width: 480px) and (max-width:700px) {
+.banner {
+    margin-left:6rem;
+    margin-right:4rem;
+}
+
+.footer {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 1em;
+ }
+}
+
+
